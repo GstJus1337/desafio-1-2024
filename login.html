@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div>
+                <h1>AgroWeather</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="fromLeft">Home</a></li>
+                    <li><a href="sobre.html" class="fromLeft">Sobre nós</a></li>
+                    <li><a href="contato.html" class="fromLeft">Contato</a></li>
+                    <li><a href="login.html" class="fromLeft">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="login">
+                <h2>Login</h2>
+                <form onsubmit="return validarFormLogin()" class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <input type="submit" value="Entrar" >
+                </form>
+                <a href="cadastro.html" class="linkcadastro">Crie sua conta</a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 AgroWeather. Todos os direitos reservados.</p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
